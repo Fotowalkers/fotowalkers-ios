@@ -14,9 +14,11 @@
 		1F2E568A1F8940050019D679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E56891F8940050019D679 /* Assets.xcassets */; };
 		1F2E568D1F8940050019D679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E568B1F8940050019D679 /* LaunchScreen.storyboard */; };
 		1F2E56961F89529F0019D679 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2E56951F89529F0019D679 /* MapKit.framework */; };
+		24B2C3BA8C19B4FD1F43EB17 /* Pods_fotowalkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE47005BD9E53BCBD27418D /* Pods_fotowalkers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DE47005BD9E53BCBD27418D /* Pods_fotowalkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fotowalkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2E567C1F8940050019D679 /* fotowalkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fotowalkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2E567F1F8940050019D679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2E56811F8940050019D679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,9 @@
 		1F2E568C1F8940050019D679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F2E568E1F8940050019D679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2E56951F89529F0019D679 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F2E56971F8957260019D679 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "dependencies/mapbox-ios-sdk-3.7.0-beta.1/static/Mapbox.framework"; sourceTree = "<group>"; };
+		3BA54BB726714D77304D33A5 /* Pods-fotowalkers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotowalkers.release.xcconfig"; path = "Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers.release.xcconfig"; sourceTree = "<group>"; };
+		8CA69CE9F825875E8012C113 /* Pods-fotowalkers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotowalkers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2E56961F89529F0019D679 /* MapKit.framework in Frameworks */,
+				24B2C3BA8C19B4FD1F43EB17 /* Pods_fotowalkers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 				1F2E567E1F8940050019D679 /* fotowalkers */,
 				1F2E567D1F8940050019D679 /* Products */,
 				1F2E56941F89529F0019D679 /* Frameworks */,
+				636CD04F1C581432A1BCDB08 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +81,20 @@
 		1F2E56941F89529F0019D679 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F2E56971F8957260019D679 /* Mapbox.framework */,
 				1F2E56951F89529F0019D679 /* MapKit.framework */,
+				1DE47005BD9E53BCBD27418D /* Pods_fotowalkers.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		636CD04F1C581432A1BCDB08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CA69CE9F825875E8012C113 /* Pods-fotowalkers.debug.xcconfig */,
+				3BA54BB726714D77304D33A5 /* Pods-fotowalkers.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F2E56911F8940050019D679 /* Build configuration list for PBXNativeTarget "fotowalkers" */;
 			buildPhases = (
+				62EB98B60E27190A1F3D1EBA /* [CP] Check Pods Manifest.lock */,
 				1F2E56781F8940050019D679 /* Sources */,
 				1F2E56791F8940050019D679 /* Frameworks */,
 				1F2E567A1F8940050019D679 /* Resources */,
+				82F91816308E77838DA0F41A /* [CP] Embed Pods Frameworks */,
+				4C3FF76FB5C960692D4DFA58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,6 +171,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C3FF76FB5C960692D4DFA58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62EB98B60E27190A1F3D1EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fotowalkers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F91816308E77838DA0F41A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F2E56781F8940050019D679 /* Sources */ = {
@@ -293,10 +370,15 @@
 		};
 		1F2E56921F8940050019D679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA69CE9F825875E8012C113 /* Pods-fotowalkers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UM6B3U65FX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/mapbox-ios-sdk-3.7.0-beta.1/static",
+				);
 				INFOPLIST_FILE = fotowalkers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.fotowalkers.fotowalkers;
@@ -308,10 +390,15 @@
 		};
 		1F2E56931F8940050019D679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA54BB726714D77304D33A5 /* Pods-fotowalkers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UM6B3U65FX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/mapbox-ios-sdk-3.7.0-beta.1/static",
+				);
 				INFOPLIST_FILE = fotowalkers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.fotowalkers.fotowalkers;
