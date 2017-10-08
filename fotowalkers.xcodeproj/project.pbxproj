@@ -14,6 +14,7 @@
 		1F2E568A1F8940050019D679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E56891F8940050019D679 /* Assets.xcassets */; };
 		1F2E568D1F8940050019D679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E568B1F8940050019D679 /* LaunchScreen.storyboard */; };
 		1F2E56961F89529F0019D679 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2E56951F89529F0019D679 /* MapKit.framework */; };
+		1FC9A80E1F8A4EBE00580872 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC9A80D1F8A4EBE00580872 /* PreferencesViewController.swift */; };
 		24B2C3BA8C19B4FD1F43EB17 /* Pods_fotowalkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE47005BD9E53BCBD27418D /* Pods_fotowalkers.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1F2E568E1F8940050019D679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2E56951F89529F0019D679 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1F2E56971F8957260019D679 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "dependencies/mapbox-ios-sdk-3.7.0-beta.1/static/Mapbox.framework"; sourceTree = "<group>"; };
+		1FC9A80D1F8A4EBE00580872 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreferencesViewController.swift; path = src/PreferencesViewController.swift; sourceTree = "<group>"; };
 		3BA54BB726714D77304D33A5 /* Pods-fotowalkers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotowalkers.release.xcconfig"; path = "Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers.release.xcconfig"; sourceTree = "<group>"; };
 		8CA69CE9F825875E8012C113 /* Pods-fotowalkers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotowalkers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 				1F2E568B1F8940050019D679 /* LaunchScreen.storyboard */,
 				1F2E568E1F8940050019D679 /* Info.plist */,
 				1F2E56861F8940050019D679 /* fotowalkers.xcdatamodeld */,
+				1FC9A80D1F8A4EBE00580872 /* PreferencesViewController.swift */,
 			);
 			path = fotowalkers;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				1F2E56821F8940050019D679 /* ViewController.swift in Sources */,
 				1F2E56801F8940050019D679 /* AppDelegate.swift in Sources */,
 				1F2E56881F8940050019D679 /* fotowalkers.xcdatamodeld in Sources */,
+				1FC9A80E1F8A4EBE00580872 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
