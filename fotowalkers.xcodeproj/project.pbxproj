@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				1F2E56831F8940050019D679 /* Main.storyboard */,
-				1F2E56891F8940050019D679 /* Assets.xcassets */,
 				1F2E568B1F8940050019D679 /* LaunchScreen.storyboard */,
+				1F2E56891F8940050019D679 /* Assets.xcassets */,
 				1F2E568E1F8940050019D679 /* Info.plist */,
 				1F2E56861F8940050019D679 /* fotowalkers.xcdatamodeld */,
 				1F524D351F8A553E00E3749D /* src */,
