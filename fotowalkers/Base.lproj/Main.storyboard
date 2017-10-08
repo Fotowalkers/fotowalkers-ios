@@ -160,7 +160,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="G9H-K9-daQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="UCu-Lh-yNR">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="UCu-Lh-yNR">
                             <connections>
                                 <action selector="onDone:" destination="zCd-Oe-B4z" id="oyp-jP-gqW"/>
                             </connections>
