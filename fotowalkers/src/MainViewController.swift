@@ -12,10 +12,6 @@ import Mapbox
 class MainViewController: UIViewController, MGLMapViewDelegate {
 	var mapView: MGLMapView?
 
-	required init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-	}
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
