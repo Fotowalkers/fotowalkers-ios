@@ -15,9 +15,8 @@ class MainViewController: UIViewController, MGLMapViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		mapView = MGLMapView()
+		mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.streetsStyleURL())
 		if let mv = mapView {
-			mv.frame = view.bounds
 			mv.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 			mv.showsUserHeadingIndicator = true
 			mv.showsUserLocation = true
