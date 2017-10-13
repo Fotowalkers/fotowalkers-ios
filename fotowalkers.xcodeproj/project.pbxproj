@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F2E56801F8940050019D679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E567F1F8940050019D679 /* AppDelegate.swift */; };
-		1F2E56821F8940050019D679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E56811F8940050019D679 /* ViewController.swift */; };
+		1F2E56821F8940050019D679 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E56811F8940050019D679 /* MainViewController.swift */; };
 		1F2E56851F8940050019D679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E56831F8940050019D679 /* Main.storyboard */; };
 		1F2E56881F8940050019D679 /* fotowalkers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E56861F8940050019D679 /* fotowalkers.xcdatamodeld */; };
 		1F2E568A1F8940050019D679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E56891F8940050019D679 /* Assets.xcassets */; };
@@ -25,7 +25,7 @@
 		1DE47005BD9E53BCBD27418D /* Pods_fotowalkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fotowalkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2E567C1F8940050019D679 /* fotowalkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fotowalkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2E567F1F8940050019D679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F2E56811F8940050019D679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F2E56811F8940050019D679 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1F2E56841F8940050019D679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F2E56871F8940050019D679 /* fotowalkers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fotowalkers.xcdatamodel; sourceTree = "<group>"; };
 		1F2E56891F8940050019D679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2E567F1F8940050019D679 /* AppDelegate.swift */,
-				1F2E56811F8940050019D679 /* ViewController.swift */,
+				1F2E56811F8940050019D679 /* MainViewController.swift */,
 				1FC9A80D1F8A4EBE00580872 /* PreferencesViewController.swift */,
 				1FCF1F3D1F8D60D60006B1C1 /* NewSpotLocationViewController.swift */,
 				1F524D361F8A5B9100E3749D /* NewSpotNameViewController.swift */,
@@ -254,7 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F524D371F8A5B9100E3749D /* NewSpotNameViewController.swift in Sources */,
-				1F2E56821F8940050019D679 /* ViewController.swift in Sources */,
+				1F2E56821F8940050019D679 /* MainViewController.swift in Sources */,
 				1F2E56801F8940050019D679 /* AppDelegate.swift in Sources */,
 				1F58F79B1F914A9100B1FB05 /* SpotInfo.swift in Sources */,
 				1F2E56881F8940050019D679 /* fotowalkers.xcdatamodeld in Sources */,

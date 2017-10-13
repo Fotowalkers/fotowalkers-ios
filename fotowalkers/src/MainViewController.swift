@@ -9,7 +9,7 @@
 import UIKit
 import Mapbox
 
-class ViewController: UIViewController, MGLMapViewDelegate {
+class MainViewController: UIViewController, MGLMapViewDelegate {
 	var mapView: MGLMapView?
 
 	required init?(coder aDecoder: NSCoder) {
