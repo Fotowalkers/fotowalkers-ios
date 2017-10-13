@@ -12,6 +12,7 @@ class NewSpotNameViewController: UITableViewController {
 	@IBOutlet weak var nameTextField: UITextField!
 
 	var spotInfo: SpotInfo?
+	var completion: ((SpotInfo) -> Void)?
 
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
@@ -30,6 +31,7 @@ class NewSpotNameViewController: UITableViewController {
 			// TODO validate input
 			si.name = nameTextField.text!
 			// TODO store locally, try to upload?
+			completion?(si)
 		}
 		dismiss(animated: true, completion: nil)
 	}

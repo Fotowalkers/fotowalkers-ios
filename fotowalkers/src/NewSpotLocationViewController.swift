@@ -14,6 +14,7 @@ class NewSpotLocationViewController: UIViewController {
 	var startLocation: CLLocationCoordinate2D?
 	var startZoomLevel: Double?
 	var startDirection: CLLocationDirection?
+	var completion: ((SpotInfo) -> Void)?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -50,6 +51,7 @@ class NewSpotLocationViewController: UIViewController {
 			let dst = segue.destination as! NewSpotNameViewController
 			dst.spotInfo = SpotInfo()
 			dst.spotInfo?.location = mapView?.centerCoordinate
+			dst.completion = completion
 		}
 	}
 }

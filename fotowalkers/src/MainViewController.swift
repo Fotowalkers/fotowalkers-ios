@@ -64,6 +64,9 @@ class MainViewController: UIViewController, MGLMapViewDelegate {
 			dst.startLocation = mapView?.centerCoordinate
 			dst.startZoomLevel = mapView?.zoomLevel
 			dst.startDirection = mapView?.direction
+			dst.completion = { (spotInfo: SpotInfo) -> Void in
+				self.addMarker(title: spotInfo.name!, subtitle: "", location: spotInfo.location!)
+			}
 		}
 	}
 }
