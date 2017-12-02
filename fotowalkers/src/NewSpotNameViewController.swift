@@ -29,7 +29,7 @@ class NewSpotNameViewController: UITableViewController {
 	@IBAction func onSave(_ sender: Any) {
 		if var si = spotInfo {
 			// TODO validate input
-			si.name = nameTextField.text!
+			si.title = nameTextField.text!
 			// TODO store locally, try to upload?
 			completion?(si)
 		}
