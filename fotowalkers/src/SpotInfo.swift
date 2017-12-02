@@ -19,6 +19,15 @@ class SpotInfo : Codable {
 		case longitude
 	}
 
+	struct SpotError : Error {
+		enum ErrorKind {
+			case invalidJson
+		}
+
+		var kind: ErrorKind
+		var message: String
+	}
+
 	required init(from decoder: Decoder) throws {
 		let container = try decoder.container(keyedBy: CodingKeys.self)
 		title = try container.decode(String.self, forKey: .title)
@@ -39,27 +48,25 @@ class SpotInfo : Codable {
 		try container.encode(location?.longitude, forKey: .longitude)
 	}
 
-	static func getAll(completion: @escaping (String?, [SpotInfo]) -> Void) {
+	static func getAll(completion: @escaping ([SpotInfo], Error?) -> Void) {
 		let session = URLSession(configuration: URLSessionConfiguration.default)
 		let task = session.dataTask(with: Constants.ApiServerUrl) { (data: Data?, response: URLResponse?, error: Error?) in
-			print("Completion!")
 			if let e = error {
-				print(e.localizedDescription)
-				completion("HTTP oops.", [])
+				print("Error fetching spots: \(e.localizedDescription)")
+				completion([], e)
 				return
 			}
+
 			if let d = data {
 				let decoder = JSONDecoder()
 				do {
 					var spotList: [SpotInfo]
-
 					try spotList = decoder.decode([SpotInfo].self, from: d)
-					for spot in spotList {
-						print("Spot: \(spot.title!)")
-					}
-					completion("Completion!", spotList)
+					completion(spotList, nil)
 				} catch _ {
-					completion("Completion failed.", [])
+					let e = SpotError(kind: .invalidJson, message: "Invalid JSON received")
+					print("Error decoding spots: \(e.message)")
+					completion([], e)
 				}
 			}
 		}

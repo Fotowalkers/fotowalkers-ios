@@ -31,7 +31,14 @@ class MainViewController: UIViewController, MGLMapViewDelegate {
 		          subtitle: "Take a photo here!",
 		          location: CLLocationCoordinate2D(latitude: 53.557085, longitude: 9.993682))
 
-		SpotInfo.getAll { (msg: String?, spots: [SpotInfo]) in
+		SpotInfo.getAll { (spots, error) in
+			if let e = error {
+				let alert = UIAlertController(title: "Sorry!", message: "Fetching spots failed: \(e.localizedDescription)", preferredStyle: .alert)
+				alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: nil))
+				self.present(alert, animated: true, completion: nil)
+				return
+			}
+
 			for spot in spots {
 				self.addMarker(title: spot.title!, subtitle: "", location: spot.location!)
 			}
