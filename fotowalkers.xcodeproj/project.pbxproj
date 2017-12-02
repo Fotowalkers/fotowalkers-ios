@@ -16,6 +16,7 @@
 		1F2E56961F89529F0019D679 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2E56951F89529F0019D679 /* MapKit.framework */; };
 		1F524D371F8A5B9100E3749D /* NewSpotNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F524D361F8A5B9100E3749D /* NewSpotNameViewController.swift */; };
 		1F58F79B1F914A9100B1FB05 /* SpotInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F58F79A1F914A9100B1FB05 /* SpotInfo.swift */; };
+		1F7AEE021FD3155000EE1EDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7AEE011FD3155000EE1EDA /* Constants.swift */; };
 		1FC9A80E1F8A4EBE00580872 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC9A80D1F8A4EBE00580872 /* PreferencesViewController.swift */; };
 		1FCF1F3E1F8D60D60006B1C1 /* NewSpotLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF1F3D1F8D60D60006B1C1 /* NewSpotLocationViewController.swift */; };
 		24B2C3BA8C19B4FD1F43EB17 /* Pods_fotowalkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE47005BD9E53BCBD27418D /* Pods_fotowalkers.framework */; };
@@ -35,6 +36,7 @@
 		1F2E56971F8957260019D679 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "dependencies/mapbox-ios-sdk-3.7.0-beta.1/static/Mapbox.framework"; sourceTree = "<group>"; };
 		1F524D361F8A5B9100E3749D /* NewSpotNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpotNameViewController.swift; sourceTree = "<group>"; };
 		1F58F79A1F914A9100B1FB05 /* SpotInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotInfo.swift; sourceTree = "<group>"; };
+		1F7AEE011FD3155000EE1EDA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FC9A80D1F8A4EBE00580872 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		1FCF1F3D1F8D60D60006B1C1 /* NewSpotLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpotLocationViewController.swift; sourceTree = "<group>"; };
 		3BA54BB726714D77304D33A5 /* Pods-fotowalkers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fotowalkers.release.xcconfig"; path = "Pods/Target Support Files/Pods-fotowalkers/Pods-fotowalkers.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				1FCF1F3D1F8D60D60006B1C1 /* NewSpotLocationViewController.swift */,
 				1F524D361F8A5B9100E3749D /* NewSpotNameViewController.swift */,
 				1F58F79A1F914A9100B1FB05 /* SpotInfo.swift */,
+				1F7AEE011FD3155000EE1EDA /* Constants.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				1F2E56881F8940050019D679 /* fotowalkers.xcdatamodeld in Sources */,
 				1FC9A80E1F8A4EBE00580872 /* PreferencesViewController.swift in Sources */,
 				1FCF1F3E1F8D60D60006B1C1 /* NewSpotLocationViewController.swift in Sources */,
+				1F7AEE021FD3155000EE1EDA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

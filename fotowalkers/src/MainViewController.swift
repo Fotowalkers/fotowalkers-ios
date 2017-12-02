@@ -30,6 +30,12 @@ class MainViewController: UIViewController, MGLMapViewDelegate {
 		addMarker(title: "Great Spot",
 		          subtitle: "Take a photo here!",
 		          location: CLLocationCoordinate2D(latitude: 53.557085, longitude: 9.993682))
+
+		SpotInfo.getAll { (msg: String?, spots: [SpotInfo]) in
+			for spot in spots {
+				self.addMarker(title: spot.title!, subtitle: "", location: spot.location!)
+			}
+		}
 	}
 
 	override func didReceiveMemoryWarning() {

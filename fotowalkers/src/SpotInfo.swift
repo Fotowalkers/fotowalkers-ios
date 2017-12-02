@@ -38,4 +38,31 @@ class SpotInfo : Codable {
 		try container.encode(location?.latitude, forKey: .latitude)
 		try container.encode(location?.longitude, forKey: .longitude)
 	}
+
+	static func getAll(completion: @escaping (String?, [SpotInfo]) -> Void) {
+		let session = URLSession(configuration: URLSessionConfiguration.default)
+		let task = session.dataTask(with: Constants.ApiServerUrl) { (data: Data?, response: URLResponse?, error: Error?) in
+			print("Completion!")
+			if let e = error {
+				print(e.localizedDescription)
+				completion("HTTP oops.", [])
+				return
+			}
+			if let d = data {
+				let decoder = JSONDecoder()
+				do {
+					var spotList: [SpotInfo]
+
+					try spotList = decoder.decode([SpotInfo].self, from: d)
+					for spot in spotList {
+						print("Spot: \(spot.title!)")
+					}
+					completion("Completion!", spotList)
+				} catch _ {
+					completion("Completion failed.", [])
+				}
+			}
+		}
+		task.resume()
+	}
 }
