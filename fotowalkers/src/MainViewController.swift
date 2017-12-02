@@ -26,8 +26,6 @@ class MainViewController: UIViewController, MGLMapViewDelegate {
 			view.sendSubview(toBack: mv) // Avoid overlaying controls defined in IB
 		}
 
-		// TODO 3d building extrusion layer
-
 		// Prepare some dummy data
 		addMarker(title: "Great Spot",
 		          subtitle: "Take a photo here!",
